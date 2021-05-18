@@ -1,0 +1,73 @@
+@charset "utf-8";
+/********************
+  keiVisual
+********************/
+header {
+	overflow: hidden;
+}
+.keyVisual {
+	width: 300vw;
+	position: relative;
+	left: -104%;
+}
+/********************
+  topProfile
+********************/
+button {
+	margin: 0 10vw 5vw auto;
+	background: #bfbfbf;
+	color: #fff;
+	height: 8vw;
+	border: none;
+	position: relative;
+	font-size: 2vw;
+	letter-spacing: .5vw;
+	padding : 0 6vw;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+button:hover {
+	background: #fff;
+	color: #bfbfbf;
+}
+button:before,
+button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 1px;
+	width: 0;
+	background: #bfbfbf;
+	transition: 400ms ease all;
+}
+button:after{
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+button:hover:before,
+button:hover:after{
+	width: 100%;
+	transition: 800ms ease all;
+}
+/********************
+  タブレットサイズ
+********************/
+@media screen and (min-width: 600px) {
+}
+/********************
+  PCサイズ
+********************/
+@media screen and (min-width: 1025px) {
+	/********************
+	 top
+	********************/
+	.keyVisual {
+		width: 100%;
+		position: relative;
+		left: 0;
+	}	
+}
